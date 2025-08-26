@@ -1,12 +1,17 @@
 
-export default function Home(){
+
+const Home = ()=> {
+
+
     return(
         <>
-         <main className="bg-black w-full min-h-screen">
+         <main className="relative flex justify-center items-center bg-black w-full min-h-screen z-10">
             <section>
-                    <h1 className="text-center text-white font-bold">Home</h1>
+                 
             </section>
          </main>
         </>
     )
-}
+};
+
+export default Home;

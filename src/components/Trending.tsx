@@ -2,9 +2,11 @@
 export default function Trending(){
     return(
         <>
-           <div className="bg-black w-full min-h-screen">
-                <h1 className="text-center font-bold text-white">Trending</h1>
-            </div>
+            <main className="flex justify-center items-center bg-black w-full min-h-screen">
+            <section>
+                    <h1 className="text-center text-white font-bold">Trending</h1>
+            </section>
+         </main>
         </>
     )
 };

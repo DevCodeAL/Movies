@@ -1,15 +1,16 @@
 import { Link } from "react-router"
 import { BsBrowserSafari } from "react-icons/bs";
+import type { NavLinks } from "../types/Types.ts";
 
-export default function NavigationBar(){
+export default function SideBar(){
 
-    const navlink = [
+    const navlink: NavLinks[] = [
         {
             browse: '/browse',
             trending: '/trending',
-             following: '/following',
-              your_videos: '/your_videos',
-              playlisyt: '/playlist',
+            following: '/following',
+            your_videos: '/your_videos',
+            playlist: '/playlist',
         },
     ];
 
@@ -17,7 +18,10 @@ export default function NavigationBar(){
         <>
            <div className="absolute bg-gray-950 border-r border-gray-800 px-8 w-[200px] min-h-screen">
             <div>
-                <h1 className="font-bold text-center text-white p-2.5">Logo</h1>
+                <Link to={'./'}>
+                    <h1 className="font-bold text-center text-white p-2.5">Logo</h1>
+                </Link>
+                
             </div>
                 <div className="py-6">
                     <ul>
@@ -31,7 +35,7 @@ export default function NavigationBar(){
                             <Link to={item.trending}>Trending</Link>
                             <Link to={item.following}>Following</Link>
                             <Link to={item.your_videos}>Your Videos</Link>
-                            <Link to={item.playlisyt}>Playlist</Link>
+                            <Link to={item.playlist}>Playlist</Link>
                         </li>)
                         )}
                 </ul>
@@ -39,4 +43,4 @@ export default function NavigationBar(){
            </div>
         </>
     )
-}
+};

@@ -1,9 +1,9 @@
 import './App.css'
 import { BrowserRouter as  Router, Routes, Route, } from 'react-router';
-import NavigationBar from './components/Navigation';
+import NavigationBar from './components/SideBar';
 import Home from './components/Home';
 import Browse from './components/Browse';
-import Trending from './components/trending';
+import Trending from './components/Trending';
 import Following from './components/Following';
 import YourVideos from './components/YourVideos';
 import PlayList from './components/Playlist';
